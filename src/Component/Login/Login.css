@@ -1,0 +1,17 @@
+#login_backPanel{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#login_button{
+    border: none;
+    background-color: #3b71ca;
+    border-radius: 5px;
+    width: 100px;
+    color:white;
+}
+#login_button:hover{
+    color:wheat;
+}

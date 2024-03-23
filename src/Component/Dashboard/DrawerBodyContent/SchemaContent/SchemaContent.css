@@ -1,0 +1,9 @@
+#schemaContainer{
+    display:block;
+}
+#containerChild{
+    margin-left: 10px;
+}
+#container{
+    margin-left: 10px;
+}
