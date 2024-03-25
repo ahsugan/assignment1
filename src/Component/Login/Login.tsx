@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom"
 import './Login.css'
 const Login: FunctionComponent = () => {
     const navigate = useNavigate()
-    const SignIn = () =>{
+    /** Navigate to dashboard */
+    const SignIn = () => {
         navigate('./dashboard')
     }
     return (
@@ -34,7 +35,7 @@ const Login: FunctionComponent = () => {
                     </div>
                 </div>
                 <br />
-                <button id="login_button" onClick={()=>SignIn()}>Login</button>
+                <button id="login_button" onClick={() => SignIn()}>Login</button>
             </div>
             <br />
             <br />

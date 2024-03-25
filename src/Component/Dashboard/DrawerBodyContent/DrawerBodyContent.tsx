@@ -5,7 +5,7 @@ import SchemaContent from "./SchemaContent/SchemaContent";
 
 const DrawerBodyContent: FunctionComponent = () => {
     const [nameOfSegment,nameEnteredValue] = useState<string>('')
-
+    /** Name entered in the schema conent name entry textbox*/
     const nameEntered = (name:string) =>{
         nameEnteredValue(name)
     }

@@ -18,6 +18,7 @@ const SchemaContent = (props:NameOfSegmet) => {
     useEffect(() => {
         setArray(optionChilds)
     }, [])
+    
     const AddSchema = () => {
         let element: HTMLElement | null = document.getElementById("container") as HTMLElement
         AddElement(element)
@@ -30,23 +31,8 @@ const SchemaContent = (props:NameOfSegmet) => {
             React.createElement("option", { value: "B" }, "Option B"),
             React.createElement("option", { value: "C" }, "Option C")
         );
-        /*const array = []
-        array.push(...elementTagString, `<div style="display: flex;"><div><select onChange={e => this.dropDownChanged(e)}>
-        <option value="1">First Name</option>
-        <option value="2">Last Name</option>
-        <option value="3">Gender</option>
-        <option value="3">Age</option>
-        <option value="3">Account Name</option>
-        <option value="3">City</option>
-        <option value="3">State</option>
-        <option value="1">Add Schema to the Segment</option>
-    
-      </select></div><div>&nbsp;&nbsp;<i class="fa-solid fa-minus"></i></div></div>`)
-        setElementTagString(array)
-        element.innerHTML = array.toString()*/
-
     }
-
+   /** checks whether user selected the schema and then add's and remove's from respective drop down list*/
     const mainOptionsSelected = (e: any) => {
         console.log(e.target.value)
         if (e.target.value !== 'Add Schema to Segment')
@@ -72,7 +58,7 @@ const SchemaContent = (props:NameOfSegmet) => {
         }
 
     }
-
+    /** Send schema to the server*/
     const SendSchemaToServer = async () => {
 
         const bodyData: any = {

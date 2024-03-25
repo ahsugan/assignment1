@@ -12,14 +12,17 @@ import { truncate } from "fs/promises";
 const Dashboard:FunctionComponent = () =>{
     const [isOpen, setIsOpen] = useState(false)
     const [enableOverlay, setEnableOverlay] = useState(false)
+    /** open or close drawer */
     const toggleDrawer = () => {
         setIsOpen((prevState) => !prevState)
         setEnableOverlay((prevState) => !prevState)
     }
+    /** open the drawer */
     const setDrawerOpen = () =>{
         console.log("hei")
         toggleDrawer()
     }
+    /** Drawer comments */
     const DrawerBody = () => {
         return (
             <div style={{ display:'flex',flexDirection:'column',height:'100vh'}}>

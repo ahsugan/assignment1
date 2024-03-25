@@ -1,5 +1,6 @@
 import React from "react";
 const DrawerHeader = () => {
+    {/** add < text */}
     const text = () => "<"
     return (
         <div style={{ background: '#39aebc', width: '100%', height: '60px', margin: "0", padding: '0', boxSizing: "border-box" }}>
